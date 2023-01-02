@@ -1,0 +1,66 @@
+.main {
+  .platform {
+    .container {
+      h1 {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        text-align: center;
+      }
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 78px;
+        .card {
+          max-width: 338px;
+          img {
+            margin-bottom: 45px;
+          }
+          h2 {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 14px;
+            margin-bottom: 29px;
+          }
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 17px;
+            margin-bottom: 29px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1169px) {
+  .main {
+    .platform {
+      .container {
+        h1 {
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .row {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 50px;
+          margin-bottom: 78px;
+          .card {
+            max-width: 338px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img {
+              margin-bottom: 45px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+.main {
+  .download {
+    background-color: rgb(2, 2, 49);
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .down_title {
+        max-width: 500px;
+        h1 {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 48px;
+          color: #ffffff;
+          margin-bottom: 14px;
+        }
+        p {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+          line-height: 28px;
+          color: #ffffff;
+          margin-bottom: 50px;
+        }
+        .down_link {
+          display: flex;
+          column-gap: 30px;
+        }
+      }
+      .down_img {
+        max-width: 450px;
+        margin: 100px 0px;
+      }
+      .mobile_link {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .main {
+    .download {
+      .container {
+        background-color: rgb(2, 2, 49);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .down_title {
+          max-width: 90%;
+          text-align: center;
+          h1 {
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 48px;
+            color: #ffffff;
+            margin-bottom: 14px;
+            margin-top: 50px;
+          }
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 28px;
+            color: #ffffff;
+            margin-bottom: 50px;
+          }
+          .down_link {
+            display: none;
+          }
+        }
+        .down_img {
+          max-width: 450px;
+          margin: 100px 0px;
+        }
+        .mobile_link {
+          display: block;
+          display: flex;
+          column-gap: 30px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+}
