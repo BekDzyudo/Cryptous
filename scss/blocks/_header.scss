@@ -105,10 +105,12 @@
     }
   }
 }
-@media screen and (max-width: 1169px) {
+@media screen and (min-width: 340px) and (max-width: 1169px) {
   .header {
     background-image: none;
     .container {
+      max-width: 340px;
+      padding: 0px 15px;
       background-color: rgb(2, 2, 49);
       padding: 0px 30px;
       nav {
@@ -130,6 +132,7 @@
           height: 15px;
           cursor: pointer;
           position: relative;
+          z-index: 99;
           &:hover {
             .menu_list {
               display: block;

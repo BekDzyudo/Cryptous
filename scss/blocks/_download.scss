@@ -49,6 +49,8 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 340px;
+        padding: 0px 15px;
         .down_title {
           max-width: 90%;
           text-align: center;
@@ -76,13 +78,17 @@
           }
         }
         .down_img {
-          max-width: 450px;
+          max-width: 300px;
           margin: 100px 0px;
+          img {
+            width: 100%;
+          }
         }
         .mobile_link {
+          max-width: 340px;
           display: block;
           display: flex;
-          column-gap: 30px;
+          column-gap: 5px;
           margin-bottom: 50px;
         }
       }

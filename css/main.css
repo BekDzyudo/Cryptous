@@ -23,7 +23,7 @@ a {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
   margin: 0px auto;
 }
 
@@ -131,11 +131,13 @@ a {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1169px) {
+@media screen and (min-width: 340px) and (max-width: 1169px) {
   .header {
     background-image: none;
   }
   .header .container {
+    max-width: 340px;
+    padding: 0px 15px;
     background-color: rgb(2, 2, 49);
     padding: 0px 30px;
   }
@@ -159,6 +161,7 @@ a {
     height: 15px;
     cursor: pointer;
     position: relative;
+    z-index: 99;
   }
   .header .container nav .menu:hover .menu_list {
     display: block;
@@ -287,6 +290,8 @@ a {
   }
   .main .prices .prices_block .container {
     background-color: rgb(2, 2, 49);
+    max-width: 340px;
+    padding: 0px 15px;
   }
   .main .prices .prices_block .container .asosiy_table {
     display: none;
@@ -329,6 +334,10 @@ a {
 }
 
 @media screen and (max-width: 1169px) {
+  .main .platform .container {
+    max-width: 340px;
+    padding: 0px 15px;
+  }
   .main .platform .container h1 {
     margin-bottom: 30px;
     text-align: center;
@@ -397,6 +406,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 340px;
+    padding: 0px 15px;
   }
   .main .download .container .down_title {
     max-width: 90%;
@@ -425,13 +436,17 @@ a {
     display: none;
   }
   .main .download .container .down_img {
-    max-width: 450px;
+    max-width: 300px;
     margin: 100px 0px;
   }
+  .main .download .container .down_img img {
+    width: 100%;
+  }
   .main .download .container .mobile_link {
+    max-width: 340px;
     display: block;
     display: flex;
-    column-gap: 30px;
+    column-gap: 5px;
     margin-bottom: 50px;
   }
 }
@@ -498,8 +513,9 @@ a {
 
 @media screen and (max-width: 1169px) {
   .main .learn .container {
-    padding: 0px 30px;
     text-align: center;
+    max-width: 340px;
+    padding: 0px 15px;
   }
   .main .learn .container h1 {
     font-family: "Poppins";
@@ -625,6 +641,8 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 340px;
+    padding: 0px 15px;
   }
   .main .never .container .never_left_img {
     display: none;
@@ -696,6 +714,8 @@ a {
 @media screen and (max-width: 1169px) {
   .footer .container {
     background: linear-gradient(227.07deg, #4e0062 0.43%, #220076 99.56%);
+    max-width: 340px;
+    padding: 0px 15px;
   }
   .footer .container .row_footer {
     padding-top: 81px;
